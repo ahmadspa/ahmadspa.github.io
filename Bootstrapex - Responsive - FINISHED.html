@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Bootstrap Example 101
+</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+<link rel="stylesheet" href="Bstyle.css" >
+</head>
+<body>
+<style>
+
+h1{
+font-family: 'montserrat';
+}
+p, h5{
+font-family:'lora';
+font-size:15px;
+}
+h3{
+font-family: 'Montserrat', sans-serif;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   height:15%;
+  
+}
+.menuBar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.btn-primary{
+border:none;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media screen and (max-width: 600px) {
+body{
+	width:100%;
+			}
+	.logo{
+	width:50px;
+	height:50px;
+	margin:28px 1px 50px;
+			}
+	.menuBar{
+	width: 100%;
+	margin:0px 10px 0px;
+	}
+	.over-img{
+	width: 50%;
+    height: 60%;
+	top: 17%;
+    left: 26%;
+	}
+	
+	.hovereffect{
+	
+	
+	
+	display:block;
+position:relative;
+height:65%;
+width:100%;
+	}
+	.overlay{
+	height:65%%;
+	}
+	.pics{
+	margin:50px 1px px;
+	bottom: 50px;
+	top:50px;
+	text-align:center;
+	}
+	.btn{
+	width:95%;
+	margin:0px 10px 0px;
+	}
+	.copyright{
+	text-align:center;}
+	
+@media screen and ()
+	
+}
+
+
+
+
+</style>
+<div id="sec1" style="background-color:#333333">
+<div class="container"> 
+	<div class="row">
+	<div class="col-2 col-s-auto">
+	<img class="logo" src="img/logo(2).png" alt="logo" height="80" width="90">
+</div>
+<div class="col-8 col-s-auto">                             <!--big container(middle) (number 8)-->
+
+
+<div style="background-color:#333333;height:275px" class="jumbotron jumbotron-fluid h-150">
+
+
+<!--<div class="container-fluid bg-primary text-white"><!--class="mx-auto btn btn-danger"--> 
+<h1 class="text-white" style="text-align:center;"> Moderno</h1>
+<p class="text-white" style="text-align:center"> Welcome to Project 101!</p>
+<div class="text-center">
+<button type="button" class="btn btn-primary" style="background-color:tomato">Get in Touch!</button>
+</div>
+</div>
+</div>
+<div class="col-2 col-s-auto col-xs-auto"> 
+<br>
+
+
+
+<div class=".menuBar my-3" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+
+</div>
+<br></br>
+</div>
+</div>
+</div>
+
+<div class="sec2">
+<div class="container"> 
+	<div class="row">
+	<div class="col-1 bg-white">
+	</div>
+		<div class="col-10">
+		<div class="card-group bg-white">                       <!--The beginning of the cards group -->
+  <div class="card bg-white border-0">
+    <div class="card-body text-center">
+	<img class="img-fluid" src="img/card1.png">
+	<br></br>
+	
+	<h5 class="card-title">We are creative!</h5>
+      <p class="card-text" style="font-size:13px;">The description of this card is in a language that I don't know so I'll just write this</p>
+    </div>
+  </div>
+  <div class="card bg-white border-0">
+    <div class="card-body text-center">
+	<img class="img-fluid" src="img/card2.gif">
+	<br></br>
+	<h5 class="card-title">We Have Skills!</h5>
+      <p class="card-text"style="font-size:13px;">This card has supporting text below as a natural lead-in to additional content</p>
+    </div>
+  </div>
+  <div class="card bg-white border-0">
+    <div class="card-body text-center">
+	<img class="img-fluid" src="img/card3.png">
+	<br></br>
+	<h5 class="card-title">We Love To Help!</h5>
+	 <p class="card-text"style="font-size:13px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+
+</div>
+
+	</div>
+		<div class="col-1 bg-white">
+	</div>
+</div>
+</div>
+</div>
+
+<div id="sec3" style="background-color:#f8f9fa">
+<div class="container"> 
+	<div class="row">
+	<div class="col-1 bg-light">
+	</div>
+		<div class="col-10 bg-light" >
+
+         <!--the stories container--> 
+<h2 class="text-center">Success Stories</h2>
+<p class="text-center">Check out our amazing success stories!</p>
+
+<div id="sec3.1">
+<div class="container p-3 my-3 border">
+<a href="#" class="close" data-dismiss="alert">&times;</a>
+<div class="row">
+<div class="col-lg-6 col-md-auto col-s-6">
+<div class="media">
+   <img class="img-fluid" alt="Paris" src="img/paris.jpg" width="100%" height="100%"  data-holder-rendered="true">
+   </div>
+   </div>
+   <div class="col-lg-6 col-s-6">
+  <div class="media-body">
+    <p style="float:right">usce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	<button type="button" class="btn btn-primary" style="background-color:tomato">View Project</button>
+	</div>
+	</div>
+	</div>
+  </div>
+  </div>
+  
+  
+  
+  <!--we are still inside the container here (Starting of Section 3.2)-->
+  <div class="row">
+
+  <div class="col-lg-4 col-md-auto col-s-4 mb-3">
+    <div class="hovereffect">
+	
+        <img class="img-fluid" src="img/IMAGE.PNG"width="100%" height="100%" alt="">
+        <div class="overlay">
+           
+           <a class="info" href="#">+</a>
+        </div>
+    
+</div>
+</div>
+	 <div class="col-lg-4 col-md-auto col-s-4 mb-3">
+    <div class="hovereffect">
+	
+        <img class="img-fluid" src="img/IMAGE.PNG" width="100%" height="100%" alt="">
+        <div class="overlay">
+           
+           <a class="info" href="#">+</a>
+        </div>
+    </div>
+</div>
+
+   <div class="col-lg-4 col-md-auto col-s-4 mb-3">
+    <div class="hovereffect">
+        <img class="img-fluid" src="img/IMAGE.PNG"width="100%" height="100%" alt="">
+        <div class="overlay">
+           
+           <a class="info"href="#">+</a>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  
+  <div class="row">
+ <div class="col-lg-4 col-md-auto col-s-4 mb-3">
+    <div class="hovereffect">
+	
+        <img class="img-fluid" src="img/IMAGE.PNG" width="100%" height="100%"alt="">
+        <div class="overlay">
+           
+           <a class="info" href="#">+</a>
+        </div>
+    
+</div>
+</div>
+ <div class="col-lg-4 col-md-4 col-s-4 mb-3">
+    <div class="hovereffect">
+	
+        <img class="img-fluid" src="img/IMAGE.PNG" width="100%" height="100%" alt="">
+        <div class="overlay">
+           
+           <a class="info" href="#">+</a>
+        </div>
+    
+</div>
+</div>
+
+ <div class="col-lg-4 col-md-4 col-s-4 mb-3">
+    <div class="hovereffect">
+	
+        <img class="img-fluid" src="img/IMAGE.PNG" width="100%" height="100%" alt="">
+        <div class="overlay">
+           
+           <a class="info" href="#">+</a>
+        </div>
+    
+</div>
+</div>
+
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="col-1 bg-light mb-2">
+	
+</div>  
+</div>
+ </div>
+</div> 
+
+
+
+<div class="container"> 
+	<div class="row">
+	<div class="col-1">
+	
+</div>
+<div class="col-lg-10 col-s-12">
+
+
+<div id="sec5">
+<h3 class="text-center">Get in Touch!</h3>
+<p class="text-center">We are communicative</p>
+<div class="row">
+<div class="text-center">
+<div class="parent">
+<img src="img/MAP IMAGE.png" width="100%"/>
+<img src="img/Path.png" class="over-img"  />
+<div class="centered">We are Here!</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-8 col-md-8 col-s-12 mt-5">
+
+	
+<form>
+<div class="form-group col-s-auto">
+	<div id="row1" class="row">
+  <div class="col-lg-6 col-md-6 col-s-12">
+  
+    
+      <input style="font-family:Lora" type="text" class="form-control" id="name" placeholder="Your Name" name="name"> 
+    </div>
+	<br></br>
+	<div class="col-lg-6 col-md-6 col-s-12">
+	
+      <input style="font-family:Lora" type="text" class="form-control" id="email" placeholder="Your Mail" name="email">
+	 
+	 </div>
+	 </div>
+	 
+	 <br></br>
+	 <div class="col-lg-12 col-md-12 col-s-12">
+	 <div class="row">
+	 <input style="font-family:Lora" type="text" class="form-control" id="email" placeholder="Subject" name="subject">
+	 
+	 </div>
+	 </div>
+	 <br></br>
+	 <textarea type="text" placeholder= "Type Message Here..."></textarea>
+	 <br></br>
+	 <div class="row">
+	 
+	 <button type="button" class="btn btn-primary btn-block" style="background-color:tomato">SEND</button>
+	 
+	 </div>
+	 </div>
+	 </form>
+	 
+	 
+	 
+	 </div>
+	<div class="col-1 col-s-auto"></div>
+	 
+	  
+	 
+	  <div class="col-lg-3 col-md-3 col-s-12 mt-5 "> 
+	  
+	  <h3 style="font-size:18px"> Our Address</h3>
+	  <p style="font-size:12px">4896 Desert Broom Court
+	  Newark, NJ07102
+	  United States</p>
+	  
+	  <h3 style="font-size:18px">Email</h3>
+	  <p style="font-size=12px"> modernomail@mail.com</p>
+	  
+	  <h3 style="font-size:18px">Phone</h3>
+	  <p style="font-size=10px">+00 123-456-78900</p>
+	 </div>
+	
+	  
+    
+
+
+
+</div>
+</div>
+</div>
+<div class="col-1 col-s-auto">
+
+
+</div>
+</div>
+</div>
+
+<div id="footer" style="background-color:#333333">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-2 col-s-1">
+
+</div>
+<div class="col-lg-7 col-md-7 col-s-12" style="height:100px"> 
+<br></br>
+<div class="copyright">
+<p style="color:white">Copyright @ 2014 Moderno. All Rights Reserved</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-s-0">
+
+<div class="pics text-center">
+<img src="img/Facebook.png">
+<img src="img/Twitter.png">
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
